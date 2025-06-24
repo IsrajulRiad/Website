@@ -1,96 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Machine Data Table</title>
+  <meta charset="UTF-8" />
+  <title>Machine Data Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff;
+      background: #f9f9f9;
+      padding: 20px;
     }
+
+    .table-wrapper {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .machine-card {
+      width: 300px;
+      border: 1px solid #999;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .cell {
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      font-size: 14px;
+    }
+
     .header {
       background-color: #007acc;
       color: white;
-      padding: 40px 0;
-      text-align: center;
-      font-size: 32px;
       font-weight: bold;
-      text-transform: capitalize;
+      padding: 10px;
+      font-size: 15px;
     }
-    .button-row {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    .button {
-      background-color: #007acc;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 14px;
-      cursor: pointer;
-      text-align: center;
-      user-select: none;
-    }
-    .table-section {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 20px;
-      border: 1px solid #999;
-      background-color: #f0f0f0;
-    }
-    .table-title {
-      font-size: 28px;
-      margin-bottom: 20px;
+
+    .label {
+      font-weight: bold;
       color: #333;
     }
-    .table-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 200px);
-      grid-auto-rows: 50px;
-      gap: 10px;
-      justify-content: center;
-    }
-    .cell {
-      background-color: #d8d8d8;
-      border: 1px solid #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
+
+    .value {
+      margin-left: 10px;
+      color: #000;
     }
   </style>
 </head>
 <body>
-  <div class="header">Machine Data</div>
 
-  <div class="button-row">
-    <div class="button">Export Excel</div>
-    <div class="button">Export PDF</div>
-    <div class="button">Export CSV</div>
-    <div class="button">QR Code</div>
-    <div class="button">Print</div>
-  </div>
+  <h2 style="text-align:center; color:#007acc;">Machine Data Overview</h2>
 
-  <div class="table-section">
-    <div class="table-title">Data Table</div>
-    <div class="table-grid">
-      <div class="cell">Cell A1</div>
-      <div class="cell">Cell B1</div>
-      <div class="cell">Cell C1</div>
-      <div class="cell">Cell D1</div>
-      <div class="cell">Cell A2</div>
-      <div class="cell">Cell B2</div>
-      <div class="cell">Cell C2</div>
-      <div class="cell">Cell D2</div>
-      <div class="cell">Cell A3</div>
-      <div class="cell">Cell B3</div>
-      <div class="cell">Cell C3</div>
-      <div class="cell">Cell D3</div>
+  <div class="table-wrapper">
+
+    <!-- Machine 1 -->
+    <div class="machine-card">
+      <div class="header">A100M4939400</div>
+      <div class="cell"><span class="label">Section:</span><span class="value">Warehouse</span></div>
+      <div class="cell"><span class="label">Line No:</span><span class="value">FS</span></div>
+      <div class="cell"><span class="label">Style Number:</span><span class="value">Lap Join</span></div>
+      <div class="cell"><span class="label">Operation:</span><span class="value"></span></div>
+      <div class="cell"><span class="label">Seam Width:</span><span class="value">Trim</span></div>
     </div>
+
+    <!-- Machine 2 -->
+    <div class="machine-card">
+      <div class="header">MC02</div>
+      <div class="cell"><span class="label">Section:</span><span class="value"></span></div>
+      <div class="cell"><span class="label">Line No:</span><span class="value"></span></div>
+      <div class="cell"><span class="label">Style Number:</span><span class="value"></span></div>
+      <div class="cell"><span class="label">Operation:</span><span class="value"></span></div>
+      <div class="cell"><span class="label">Seam Width:</span><span class="value"></span></div>
+    </div>
+
+    <!-- Machine 3 -->
+    <div class="machine-card">
+      <div class="header">MC03</div>
+      <div class="cell"><span class="label">Section:</span><span class="value"></span></div>
+      <div class="cell"><span class="label">Line No:</span><span class="value"></span></div>
+      <div class="cell"><span class="label">Style Number:</span><span class="value"></span></div>
+      <div class="cell"><span class="label">Operation:</span><span class="value"></span></div>
+      <div class="cell"><span class="label">Seam Width:</span><span class="value"></span></div>
+    </div>
+
   </div>
 </body>
 </html>
