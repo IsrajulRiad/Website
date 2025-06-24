@@ -1,16 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
-  <defs>
-    <bx:export>
-      <bx:file format="svg"/>
-    </bx:export>
-  </defs>
-  <rect x="7.864" y="10.943" width="84.293" height="30" fill="#007acc" rx="5" style="stroke-width: 1;"/>
-  <text x="17.864" y="30.943" font-family="Arial" font-size="14" fill="#fff" style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(0.842926, 0, 0, 1, 1.235233, 0)">Export Excel</text>
-  <rect x="100.586" y="10.943" width="84.293" height="30" fill="#007acc" rx="5" style="stroke-width: 1;"/>
-  <text x="127.864" y="30.943" font-family="Arial" font-size="14" fill="#fff" style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(0.842926, 0, 0, 1, 1.235233, 0)">Export PDF</text>
-  <rect x="7.864" y="60.943" width="488.897" height="100" fill="#f0f0f0" stroke="#999" stroke-width="1" style="stroke-width: 1;"/>
-  <line x1="7.864" y1="90.943" x2="496.761" y2="90.943" stroke="#ccc" stroke-width="1" style="stroke-width: 1;"/>
-  <text x="17.864" y="80.943" font-family="Arial" font-size="14" fill="#333" style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(0.842926, 0, 0, 1, 1.235233, 0)">Machine Number</text>
-  <text x="17.864" y="110.943" font-family="Arial" font-size="14" fill="#333" style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(0.842926, 0, 0, 1, 1.235233, 0)">Section</text>
-</svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vectr Design to HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fff;
+    }
+    .button {
+      display: inline-block;
+      background-color: #007acc;
+      color: #fff;
+      padding: 8px 16px;
+      margin-right: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .table-box {
+      margin-top: 20px;
+      width: 500px;
+      border: 1px solid #999;
+      background-color: #f0f0f0;
+    }
+    .table-row {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+    .table-cell {
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <a class="button">Export Excel</a>
+    <a class="button">Export PDF</a>
+  </div>
+
+  <div class="table-box">
+    <div class="table-row">
+      <div class="table-cell">Machine Number</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell">Section</div>
+    </div>
+  </div>
+
+</body>
+</html>
