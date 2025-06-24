@@ -3,52 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Machine Data Layout</title>
+  <title>Machine Data Table</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #fff;
       font-family: Arial, sans-serif;
-    }
-    .button-row {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-      gap: 20px;
-    }
-    .button {
-      background-color: #007acc;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 14px;
-      text-align: center;
-      cursor: pointer;
-      user-select: none;
+      background-color: #fff;
     }
     .header {
       background-color: #007acc;
       color: white;
+      padding: 40px 0;
       text-align: center;
-      padding: 20px 0;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: bold;
       text-transform: capitalize;
     }
-    .table-box {
-      background-color: #f0f0f0;
-      border: 1px solid #999;
-      margin: 40px auto;
-      width: 90%;
-      max-width: 1150px;
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
       padding: 20px;
     }
-    .table-row {
-      border-bottom: 1px solid #ccc;
-      padding: 10px 0;
-      font-size: 18px;
+    .button {
+      background-color: #007acc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: center;
+      user-select: none;
+    }
+    .table-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #999;
+      background-color: #f0f0f0;
+    }
+    .table-title {
+      font-size: 28px;
+      margin-bottom: 20px;
       color: #333;
+    }
+    .table-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 200px);
+      grid-auto-rows: 50px;
+      gap: 10px;
+      justify-content: center;
+    }
+    .cell {
+      background-color: #d8d8d8;
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
     }
   </style>
 </head>
@@ -63,9 +75,22 @@
     <div class="button">Print</div>
   </div>
 
-  <div class="table-box">
-    <div class="table-row">Machine Number</div>
-    <div class="table-row">Section</div>
+  <div class="table-section">
+    <div class="table-title">Data Table</div>
+    <div class="table-grid">
+      <div class="cell">Cell A1</div>
+      <div class="cell">Cell B1</div>
+      <div class="cell">Cell C1</div>
+      <div class="cell">Cell D1</div>
+      <div class="cell">Cell A2</div>
+      <div class="cell">Cell B2</div>
+      <div class="cell">Cell C2</div>
+      <div class="cell">Cell D2</div>
+      <div class="cell">Cell A3</div>
+      <div class="cell">Cell B3</div>
+      <div class="cell">Cell C3</div>
+      <div class="cell">Cell D3</div>
+    </div>
   </div>
 </body>
 </html>
