@@ -1,2 +1,71 @@
-<!doctype html>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" width="1200px" height="1000px"><path style="stroke-width: 1.044; transform-origin: 200px 236.348px;" fill="#007acc" d="M 156 217.35 H 245 A 5 5 0 0 1 250 222.35 V 250.346 A 5 5 0 0 1 245 255.346 H 155 A 5 5 0 0 1 150 250.346 V 223.35 A 6 6 0 0 1 156 217.35 Z" id="button1" data-button1="" data-button2=""></path><text style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(0.842926, 0, 0, 1.087278, 143.370808, 207.812277)" x="17.864" y="30.943" font-size="14" font-family="Arial" fill="#fff">Export Excel</text><path style="stroke-width: 1.044; transform-origin: 400px 236.348px;" fill="#007acc" d="M 356 217.35 H 445 A 5 5 0 0 1 450 222.35 V 250.346 A 5 5 0 0 1 445 255.346 H 355 A 5 5 0 0 1 350 250.346 V 223.35 A 6 6 0 0 1 356 217.35 Z" id="rect-1" data-button1="" data-button2=""></path><text style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(0.842926, 0, 0, 1.087278, 343.371012, 207.812277)" x="17.864" y="30.943" font-size="14" font-family="Arial" fill="#fff">Export Excel</text><path style="stroke-width: 1.044; transform-origin: 600px 236.348px;" fill="#007acc" d="M 556 217.35 H 645 A 5 5 0 0 1 650 222.35 V 250.346 A 5 5 0 0 1 645 255.346 H 555 A 5 5 0 0 1 550 250.346 V 223.35 A 6 6 0 0 1 556 217.35 Z" id="rect-2" data-button1="" data-button2=""></path><text style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(0.842926, 0, 0, 1.087278, 543.370805, 207.812277)" x="17.864" y="30.943" font-size="14" font-family="Arial" fill="#fff">Export Excel</text><path style="stroke-width: 1.044; transform-origin: 800px 236.348px;" fill="#007acc" d="M 756 217.35 H 845 A 5 5 0 0 1 850 222.35 V 250.346 A 5 5 0 0 1 845 255.346 H 755 A 5 5 0 0 1 750 250.346 V 223.35 A 6 6 0 0 1 756 217.35 Z" id="rect-3" data-button1="" data-button2=""></path><text style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(0.842926, 0, 0, 1.087278, 758.920189, 207.812277)" x="17.864" y="30.943" font-size="14" font-family="Arial" fill="#fff">Export Excel</text><path style="stroke-width: 1.044; transform-origin: 1000px 236.348px;" fill="#007acc" d="M 956 217.35 H 1045 A 5 5 0 0 1 1050 222.35 V 250.346 A 5 5 0 0 1 1045 255.346 H 955 A 5 5 0 0 1 950 250.346 V 223.35 A 6 6 0 0 1 956 217.35 Z" id="rect-4" data-button1="" data-button2=""></path><text style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(0.842926, 0, 0, 1.087278, 943.371, 207.812277)" x="17.864" y="30.943" font-size="14" font-family="Arial" fill="#fff">Export Excel</text><line x1="7.866" y1="432.772" x2="1160.11" y2="432.772" stroke="#ccc" stroke-width="1" style="stroke-width: 1;"></line><rect x="23.875" y="343.13" width="1152.25" height="313.74" fill="#f0f0f0" stroke="#999" stroke-width="1" style="stroke-width: 1;"></rect><text style="fill: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: pre;" transform="matrix(2.922066, 0, 0, 5.339229, 35.424829, -8.281143)" x="17.864" y="80.943">Machine Number</text><text x="17.864" y="110.943" font-family="Arial" font-size="14" fill="#333" style="white-space: pre; stroke-width: 1; font-size: 14px;" transform="matrix(2.922066, 0, 0, 5.339229, 35.424829, -8.281143)">Section</text><rect x="4.651" width="1195.35" height="200" rx="5" style="stroke-width: 1.044;" fill="#007acc"></rect><text style="fill: rgb(255, 255, 255); font-family: Arial; font-size: 4.74814px; font-weight: 700; line-height: 7.48849px; text-anchor: middle; text-transform: capitalize; white-space: pre;" transform="matrix(17.281948, 0, 0, 15.06973, -3413.779399, -605.038775)" x="232.223" y="48.4">MACHINE DATA</text></svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Data Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .button-row {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .button {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    .header {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    .table-box {
+      background-color: #f0f0f0;
+      border: 1px solid #999;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1150px;
+      padding: 20px;
+    }
+    .table-row {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Machine Data</div>
+
+  <div class="button-row">
+    <div class="button">Export Excel</div>
+    <div class="button">Export PDF</div>
+    <div class="button">Export CSV</div>
+    <div class="button">QR Code</div>
+    <div class="button">Print</div>
+  </div>
+
+  <div class="table-box">
+    <div class="table-row">Machine Number</div>
+    <div class="table-row">Section</div>
+  </div>
+</body>
+</html>
